@@ -162,8 +162,8 @@ int Preferences::Config_Load()
     ShellToolTip();
 
     //Internet
-    if (Retour!=2 && Config(__T("CheckUpdate"))==__T("1"))
-        Prefs->InternetCheck();
+	//if (Retour!=2 && Config(__T("CheckUpdate"))==__T("1"))
+    //    Prefs->InternetCheck();
 
     //New version menu
     if (!Prefs->Config(__T("Version")).empty() && Prefs->Config(__T("Version"))!=Prefs->Config(__T("NewestVersion")))

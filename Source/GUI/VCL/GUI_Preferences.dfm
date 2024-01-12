@@ -12,10 +12,8 @@ object PreferencesF: TPreferencesF
   Font.Height = -11
   Font.Name = 'Arial'
   Font.Style = []
-  OldCreateOrder = False
   Position = poDesigned
   OnShow = FormShow
-  PixelsPerInch = 96
   TextHeight = 14
   object OK: TButton
     Left = 544
@@ -75,7 +73,6 @@ object PreferencesF: TPreferencesF
     object Setup: TTabSheet
       Caption = 'General'
       OnShow = Setup_GeneralShow
-      ExplicitWidth = 509
       object Langue_C: TLabel
         Left = 0
         Top = 9
@@ -123,6 +120,7 @@ object PreferencesF: TPreferencesF
         Height = 18
         Caption = 'Check for newest versions (require Internet connection)'
         Checked = True
+        Enabled = False
         State = cbChecked
         TabOrder = 2
         OnClick = CB_CheckUpdateClick
@@ -183,7 +181,6 @@ object PreferencesF: TPreferencesF
       Caption = 'Advanced'
       ImageIndex = 1
       OnShow = Setup_AdvancedShow
-      ExplicitWidth = 509
       object CB_ShowToolBar: TCheckBox
         Left = 0
         Top = 26
@@ -226,7 +223,7 @@ object PreferencesF: TPreferencesF
         Width = 268
         Height = 18
         Caption = 'Add creation date to text output'
-        TabOrder = 4
+        TabOrder = 5
         OnClick = Advanced_InformTimestampClick
       end
       object Advanced_EnableFfmpeg: TCheckBox
@@ -236,6 +233,7 @@ object PreferencesF: TPreferencesF
         Height = 18
         Caption = 'Enable FFmpeg plugin'
         TabOrder = 4
+        Visible = False
         OnClick = Advanced_EnableFfmpegClick
       end
     end
@@ -243,7 +241,6 @@ object PreferencesF: TPreferencesF
       Caption = 'Language'
       ImageIndex = 3
       OnShow = Customize_LanguageShow
-      ExplicitWidth = 509
       object Language_Caption: TLabel
         Left = 0
         Top = 0
@@ -292,7 +289,6 @@ object PreferencesF: TPreferencesF
       Caption = 'Sheet'
       ImageIndex = 4
       OnShow = Customize_SheetShow
-      ExplicitWidth = 509
       object Sheet_Caption: TLabel
         Left = 0
         Top = 0
@@ -340,7 +336,6 @@ object PreferencesF: TPreferencesF
     object Customize_TreeText: TTabSheet
       Caption = 'Tree && Text'
       ImageIndex = 6
-      ExplicitWidth = 509
       object Tree_NotYet: TLabel
         Left = 362
         Top = 78
@@ -423,7 +418,6 @@ object PreferencesF: TPreferencesF
     object Customize: TTabSheet
       Caption = 'Customize'
       ImageIndex = 7
-      ExplicitWidth = 509
     end
   end
 end

@@ -933,11 +933,13 @@ void __fastcall TMainF::Refresh(TTabSheet *Page)
 
             Ztring State=I->Option_Static(__T("Info_Graph_Svg_Plugin_State"), __T(""));
             if (State == __T("0") || !File::Exists(InstallFolder+__T("\\Plugin\\Graph\\Template.html"))) //Try to install plugin
-            {
-                TPluginF* P = new TPluginF(this, PLUGIN_GRAPH);
+			{
+				#ifndef MEDIAINFOGUI_PLUGIN_NO
+				TPluginF* P = new TPluginF(this, PLUGIN_GRAPH);
                 if (P->Configure())
                     P->ShowModal();
-                delete P;
+				delete P;
+				#endif
 
                 State = I->Option_Static(__T("Info_Graph_Svg_Plugin_State"), __T(""));
             }

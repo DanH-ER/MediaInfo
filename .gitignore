@@ -39,3 +39,17 @@ Thumbs.db
 Win32
 x64
 My Project
+*.vsidx
+*.lock
+*.db-shm
+*.db-wal
+*.bin
+Project/QMake/build-MediaInfoQt-Desktop_Qt_6_6_1_MSVC2019_64bit-Release/_Automated/
+Project/QMake/build-MediaInfoQt-Desktop_Qt_6_6_1_MSVC2019_64bit-Release/.qtc_clangd/
+Project/QMake/build-MediaInfoQt-Desktop_Qt_5_15_2_MSVC2019_64bit-Release/_Automated/
+Project/QMake/build-MediaInfoQt-Desktop_Qt_5_15_2_MSVC2019_64bit-Release/.qtc_clangd/
+Project/QMake/build-MediaInfoQt-Desktop_Qt_5_15_2_MSVC2019_64bit-Profile/.qtc_clangd/
+Project/QMake/build-MediaInfoQt-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/.qtc_clangd/
+Project/BCB/PreRelease/
+Project/BCB/GUI/__astcache/
+Project/QMake/build*/
